@@ -3010,4 +3010,29 @@ a[href*="logout"] {
         font-size: 13px !important;
         padding: 13px !important;
     }
+        .landing-preview {
+        display: none !important;
+    }
+
+    .landing-text {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .landing-text h1,
+    .landing-text p {
+        text-align: center !important;
+    }
+
+    .hero-buttons {
+        justify-content: center !important;
+    }
+
+    #dashboardNav {
+        display: none !important;
+    }
+
+    body.logged-in #dashboardNav {
+        display: flex !important;
+    }
 }
