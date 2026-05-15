@@ -1,6 +1,6 @@
 # GondolatTér
 
-A GondolatTér egy egyszerű online napló webalkalmazás. A felhasználó regisztrálhat, bejelentkezhet, saját bejegyzéseket készíthet, kereshet, szerkeszthet és törölhet.
+A GondolatTér egy online napló webalkalmazás, amelyben a felhasználók saját bejegyzéseket hozhatnak létre, szerkeszthetnek és kereshetnek a korábbi gondolataik között.
 
 ## Használt technológiák
 
@@ -12,91 +12,92 @@ A GondolatTér egy egyszerű online napló webalkalmazás. A felhasználó regis
 - JavaScript
 - bcrypt
 - express-session
+- Jest
 
-## Funkciók
+---
+
+# Funkciók
 
 - regisztráció
 - bejelentkezés
 - kijelentkezés
-- elfelejtett jelszó
+- elfelejtett jelszó funkció
 - jelszó-visszaállítás
 - új bejegyzés létrehozása
 - bejegyzések listázása
-- keresés címben és tartalomban
 - szerkesztés
 - törlés
-- rich text szerkesztő
+- keresés címben és tartalomban
+- rich text editor
 - kép beszúrása
+- profil oldal
+- responsive design
 
-## Futtatás
+---
 
-A projekt mappájában:
+# Teszt felhasználó
+
+| Adat | Érték |
+|---|---|
+| Email | test@gmail.com |
+| Jelszó | Test123 |
+
+---
+
+# Projekt futtatása
+
+## Szükséges programok
+
+- Node.js
+- npm
+- Visual Studio Code
+
+---
+
+# Indítás
+
+## 1. Projekt megnyitása
+
+Nyisd meg a projekt mappáját Visual Studio Code-ban.
+
+## 2. Terminal megnyitása
+
+VS Code felső menü:
+
+Terminal → New Terminal
+
+## 3. Függőségek telepítése
 
 ```bash
 npm install
+```
+
+## 4. Projekt indítása
+
+```bash
 npm start
 ```
 
-Böngészőben:
+## 5. Böngésző megnyitása
 
 ```text
 http://localhost:3000
 ```
 
-## Megjegyzés az elfelejtett jelszóhoz
+---
 
-A projekt demo módban működik, ezért valódi email küldés nincs bekötve. A visszaállító link az oldalon jelenik meg.
+# Tesztek futtatása
 
-## Stock fotók
+```bash
+npm test
+```
 
-A felület néhány előnézeti és minta képet Unsplash és Pexels online képlinkekkel jelenít meg.
+---
 
-## Képek
+# Adatbázis
 
-A képek a `public/images` mappában vannak, így a weboldal nem külső képlinkekre támaszkodik.
+A projekt SQLite adatbázist használ.
 
-## Dashboard
+Az adatbázis automatikusan létrejön első indításkor.
 
-A dashboard menü csak működő, tényleges oldalakra mutató elemeket tartalmaz. A keresés a keresőmezőben működik, a rendezés pedig a Legújabb/Legrégebbi választóval állítható.
-
-## Profil oldal
-
-A felhasználó a nevére kattintva megnyithatja a profil oldalát, ahol megtekintheti az adatait, módosíthatja a nevét és feltölthet profilképet.
-
-
-## Teszt felhasználó
-
-A projekt első indításkor automatikusan létrehoz egy teszt felhasználót:
-
-- Email: test@gmail.com
-- Jelszó: Test123
-- Név: Huszti Szilvia
-
-Ehhez a teszt profilhoz tartoznak a minta bejegyzések.  
-Új regisztrált felhasználó esetén a napló üresen indul.
-
-## Főoldal bejelentkezett állapot
-
-Ha a felhasználó be van jelentkezve és visszalép a főoldalra, a rendszer nem jelentkezteti ki. A navigációban megjelenik a Naplóm gomb és a profil link.
-
-## Inspiráció oldal
-
-Az Inspiráció oldal külön, kártyás bejegyzéseket tartalmaz a feltöltött stock fotókkal.
-
-
-## Finomított funkciók
-
-- Szebb üres dashboard állapot új felhasználóknál
-- Toast értesítések mentés, törlés és profilfrissítés után
-- Loading állapot a belépési és regisztrációs gombokon
-- Bejegyzés kategória badge-ek
-- Keresési találatok kiemelése
-- Profil extra adatok: bemutatkozás és kedvenc idézet
-- Profil statisztika: bejegyzések száma és utolsó aktivitás
-- Finom hover animációk az inspirációs kártyákon
-- Reszponzívabb mobilos dashboard elrendezés
-- Sticky rich text editor toolbar
-
-## Editor frissítés
-
-A rich text editorban a szöveg színe mellett a kijelölt szöveg háttérszíne is módosítható.
+A táblák létrehozásához külön `database.sql` fájl tartozik a projekthez.
