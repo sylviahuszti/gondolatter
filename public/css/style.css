@@ -2829,6 +2829,7 @@ a[href*="logout"] {
         border: none !important;
     }
 
+  .nav-menu .profile-link,
   .nav-menu .small-avatar {
     display: none !important;
 }
@@ -3043,14 +3044,9 @@ body.logged-in #registerNav {
 body.logged-in #dashboardNav,
 body.logged-in #profileNav {
     display: flex !important;
-}
+} 
 
 body.logged-in #profileNav {
-    background: white !important;
-    color: #102033 !important;
-    border: 1px solid #e4edf2 !important;
-}
+    display: flex !important;
 
-body.logged-in #homeUserName {
-    display: inline !important;
 }
