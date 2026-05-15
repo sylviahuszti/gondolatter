@@ -23,8 +23,6 @@ async function checkHomeLogin() {
         if (homeUserName) {
             homeUserName.textContent = user.name;
         }
-
-        }
     } catch (error) {
         console.log("Bejelentkezési állapot nem ellenőrizhető.");
     }
