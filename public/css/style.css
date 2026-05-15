@@ -1193,10 +1193,8 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Javított főoldali preview + könyv logó
-   A cél: a mintaképhez közelebb álló, szellősebb hero rész
-   ========================================================== */
+/*  Javított főoldali preview + könyv logó
+   A cél: a mintaképhez közelebb álló, szellősebb hero rész */
 
 .brand-symbol {
     width: 34px;
@@ -1445,9 +1443,7 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Végső javítás: G logó, egyenes hero mockup, helyi stock fotók
-   ========================================================== */
+/* Végső javítás: G logó, egyenes hero mockup, helyi stock fotók */
 
 .brand-symbol {
     width: 34px;
@@ -1533,9 +1529,7 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Dashboard tisztítás: nincs duplikált gomb, nincs kamu menüpont
-   ========================================================== */
+/* Dashboard tisztítás: nincs duplikált gomb, nincs kamu menüpont */
 
 .side-menu {
     margin-top: 28px;
@@ -1623,9 +1617,7 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Profil oldal + dashboard navigáció finomítás + Sapiens kép
-   ========================================================== */
+/* Profil oldal + dashboard navigáció finomítás + Sapiens kép */
 
 /* Dashboard: nincs duplikált inspiráció a felső menüben */
 .dashboard-top-clean {
@@ -1769,9 +1761,7 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Egységes oldalsó menü méretek
-   ========================================================== */
+/* Egységes oldalsó menü méretek */
 
 .side-menu {
     display: flex;
@@ -1822,9 +1812,7 @@ select:focus {
 
 
 
-/* ==========================================================
-   Főoldal bejelentkezett állapot + dashboard-szerű preview menü
-   ========================================================== */
+/* Főoldal bejelentkezett állapot + dashboard-szerű preview menü */
 
 .hidden {
     display: none !important;
@@ -1861,9 +1849,7 @@ select:focus {
     color: white;
 }
 
-/* ==========================================================
-   Inspiráció oldal új kártyás tartalommal
-   ========================================================== */
+/* Inspiráció oldal új kártyás tartalommal */
 
 .inspiration-dashboard {
     background:
@@ -2044,9 +2030,7 @@ select:focus {
 }
 
 
-/* ==========================================================
-   Inspiráció menüpont: főoldali stílus, bemutató szöveg + ötletkártyák
-   ========================================================== */
+/* Inspiráció menüpont: főoldali stílus, bemutató szöveg + ötletkártyák */
 
 .nav-menu a.active {
     color: #008b8b;
@@ -2195,7 +2179,7 @@ select:focus {
 }
 
 
-/* ===== G logo fix ===== */
+/*  G logo fix */
 
 .brand-symbol{
     width:58px !important;
@@ -2216,7 +2200,7 @@ select:focus {
 
 
 
-/* ===== Sidebar banner + logout bottom ===== */
+/* Sidebar banner + logout bottom */
 
 .sidebar,
 .dashboard-sidebar,
@@ -2295,10 +2279,8 @@ select:focus {
 
 
 
-/* ==========================================================
-   Extra polish: toast, empty state, badges, hover zoom, mobile layout,
-   profile stats, active menu indicator
-   ========================================================== */
+/* Extra polish: toast, empty state, badges, hover zoom, mobile layout,
+   profile stats, active menu indicator */
 
 .toast-container {
     position: fixed;
@@ -2491,9 +2473,7 @@ mark {
 }
 
 
-/* ==========================================================
-   VALÓDI könyv logó javítás - brand-symbol felülírás
-   ========================================================== */
+/* VALÓDI könyv logó javítás - brand-symbol felülírás */
 
 .brand {
     display: inline-flex !important;
@@ -2574,9 +2554,7 @@ mark {
 }
 
 
-/* ==========================================================
-   G logó visszaállítás + logout alul
-   ========================================================== */
+/* G logó visszaállítás + logout alul */
 
 .brand-symbol {
     width: 44px !important;
@@ -2620,9 +2598,7 @@ a[href*="logout"] {
 }
 
 
-/* ==========================================================
-   Final logo/menu polish
-   ========================================================== */
+/* Final logo/menu polish */
 
 .brand {
     display: flex !important;
@@ -2686,9 +2662,7 @@ a[href*="logout"] {
 }
 
 
-/* ==========================================================
-   Profil tisztítás + kisebb dashboard logó
-   ========================================================== */
+/* Profil tisztítás + kisebb dashboard logó */
 
 /* Bejelentkezés utáni oldalsáv logó legyen arányosabb */
 .side-brand {
@@ -2852,6 +2826,20 @@ a[href*="logout"] {
         color: white !important;
         border: none !important;
         grid-column: span 2;
+    }
+
+    .nav-menu .profile-link,
+    .nav-menu .small-avatar,
+    .small-avatar {
+        display: none !important;
+    }
+
+    .logged-in-only {
+        display: none !important;
+    }
+
+    body.logged-in .logged-in-only {
+        display: flex !important;
     }
 
     .landing-hero {

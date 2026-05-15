@@ -2,7 +2,6 @@ const loginNav = document.getElementById("loginNav");
 const registerNav = document.getElementById("registerNav");
 const dashboardNav = document.getElementById("dashboardNav");
 const profileNav = document.getElementById("profileNav");
-const homeAvatar = document.getElementById("homeAvatar");
 const homeUserName = document.getElementById("homeUserName");
 
 async function checkHomeLogin() {
@@ -25,12 +24,6 @@ async function checkHomeLogin() {
             homeUserName.textContent = user.name;
         }
 
-        if (homeAvatar) {
-            if (user.avatar) {
-                homeAvatar.innerHTML = `<img src="${user.avatar}" alt="Profilkép">`;
-            } else {
-                homeAvatar.textContent = user.name ? user.name.charAt(0).toUpperCase() : "G";
-            }
         }
     } catch (error) {
         console.log("Bejelentkezési állapot nem ellenőrizhető.");
