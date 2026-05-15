@@ -1,6 +1,7 @@
 # GondolatTér
 
-A GondolatTér egy online napló webalkalmazás, amelyben a felhasználók saját bejegyzéseket hozhatnak létre, szerkeszthetnek és kereshetnek a korábbi gondolataik között.
+A GondolatTér egy egyszerű online napló webalkalmazás, amelyet egyetemi projektként készítettem.  
+A felhasználó regisztrálhat, bejelentkezhet, saját bejegyzéseket hozhat létre, kereshet, szerkeszthet és törölhet.
 
 ## Használt technológiák
 
@@ -12,92 +13,58 @@ A GondolatTér egy online napló webalkalmazás, amelyben a felhasználók sajá
 - JavaScript
 - bcrypt
 - express-session
-- Jest
 
----
-
-# Funkciók
+## Funkciók
 
 - regisztráció
 - bejelentkezés
 - kijelentkezés
-- elfelejtett jelszó funkció
+- elfelejtett jelszó
 - jelszó-visszaállítás
 - új bejegyzés létrehozása
-- bejegyzések listázása
-- szerkesztés
-- törlés
+- szerkesztés és törlés
 - keresés címben és tartalomban
-- rich text editor
+- rich text szerkesztő
 - kép beszúrása
-- profil oldal
-- responsive design
+- profil oldal és profilkép
+- reszponzív mobilos design
 
----
+## Projekt struktúra
 
-# Teszt felhasználó
+/public  
+&nbsp;&nbsp;&nbsp;&nbsp;/css  
+&nbsp;&nbsp;&nbsp;&nbsp;/js  
+&nbsp;&nbsp;&nbsp;&nbsp;/images  
 
-| Adat | Érték |
-|---|---|
-| Email | test@gmail.com |
-| Jelszó | Test123 |
+/routes  
+/database  
 
----
+## Futtatás
 
-# Projekt futtatása
+A projekt mappájában:
 
-## Szükséges programok
-
-- Node.js
-- npm
-- Visual Studio Code
-
----
-
-# Indítás
-
-## 1. Projekt megnyitása
-
-Nyisd meg a projekt mappáját Visual Studio Code-ban.
-
-## 2. Terminal megnyitása
-
-VS Code felső menü:
-
-Terminal → New Terminal
-
-## 3. Függőségek telepítése
-
-```bash
-npm install
-```
-
-## 4. Projekt indítása
-
-```bash
+npm install  
 npm start
-```
 
-## 5. Böngésző megnyitása
+Böngészőben:
 
-```text
 http://localhost:3000
-```
 
----
+## Render link
 
-# Tesztek futtatása
+https://gondolatter.onrender.com/
 
-```bash
-npm test
-```
+## Megjegyzés
 
----
+A projekt demo módban működik, ezért valódi email küldés nincs bekötve.  
+A jelszó-visszaállító link az oldalon jelenik meg.
 
-# Adatbázis
+## Teszt felhasználó
 
-A projekt SQLite adatbázist használ.
+- Email: test@gmail.com
+- Jelszó: Test123
 
-Az adatbázis automatikusan létrejön első indításkor.
+## Reszponzív design
 
-A táblák létrehozásához külön `database.sql` fájl tartozik a projekthez.
+Az alkalmazás desktop és mobil nézetre is optimalizálva lett modern responsive megoldásokkal.
+
