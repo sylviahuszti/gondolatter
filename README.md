@@ -31,13 +31,15 @@ A felhasználó regisztrálhat, bejelentkezhet, saját bejegyzéseket hozhat lé
 
 ## Projekt struktúra
 
-/public  
-&nbsp;&nbsp;&nbsp;&nbsp;/css  
-&nbsp;&nbsp;&nbsp;&nbsp;/js  
-&nbsp;&nbsp;&nbsp;&nbsp;/images  
-
-/routes  
-/database  
+- middleware/ – köztes rétegek
+- routes/ – API útvonalak
+- tests/ – tesztfájlok
+- public/ – frontend fájlok
+- database.js – SQLite kapcsolat
+- database.sql – adatbázis séma
+- database.db – SQLite adatbázis
+- server.js – szerver indítása
+- package.json – projekt beállítások és csomagok
 
 ## Futtatás
 
