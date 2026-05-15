@@ -3,6 +3,7 @@ const registerNav = document.getElementById("registerNav");
 const dashboardNav = document.getElementById("dashboardNav");
 const profileNav = document.getElementById("profileNav");
 const homeUserName = document.getElementById("homeUserName");
+const homeAvatar = document.getElementById("homeAvatar");
 
 async function checkHomeLogin() {
     try {
@@ -15,6 +16,8 @@ async function checkHomeLogin() {
         const data = await response.json();
         const user = data.user;
 
+        document.body.classList.add("logged-in");
+
         if (loginNav) loginNav.classList.add("hidden");
         if (registerNav) registerNav.classList.add("hidden");
         if (dashboardNav) dashboardNav.classList.remove("hidden");
@@ -23,7 +26,11 @@ async function checkHomeLogin() {
         if (homeUserName) {
             homeUserName.textContent = user.name;
         }
-        document.body.classList.add("logged-in");
+
+        if (homeAvatar && user.avatar) {
+            homeAvatar.innerHTML = `<img src="${user.avatar}" alt="Profilkép">`;
+        }
+
     } catch (error) {
         console.log("Bejelentkezési állapot nem ellenőrizhető.");
     }
