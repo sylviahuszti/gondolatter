@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Új bejegyzés - GondolatTér</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page editor-page">
+    <main class="editor-shell-page">
+        <header class="editor-header">
+            <a href="dashboard.html" class="back-link">← Vissza a listához</a>
+            <button form="entryForm" type="submit" class="btn btn-primary btn-small">Mentés</button>
+        </header>
+
+        <section class="editor-card-large">
+            <h1 id="pageTitle">Új bejegyzés</h1>
+
+            <form id="entryForm">
+                <input type="text" id="title" class="title-input" placeholder="Cím megadása...">
+
+                <div class="editor-box">
+                    <div class="toolbar">
+                        <button type="button" data-command="bold"><b>B</b></button>
+                        <button type="button" data-command="italic"><i>I</i></button>
+                        <button type="button" data-command="underline"><u>U</u></button>
+                        <button type="button" data-command="formatBlock" data-value="h1">H1</button>
+                        <button type="button" data-command="formatBlock" data-value="h2">H2</button>
+                        <button type="button" data-command="formatBlock" data-value="h3">H3</button>
+                        <button type="button" data-command="insertUnorderedList">Lista</button>
+                        <button type="button" data-command="formatBlock" data-value="blockquote">Idézet</button>
+                        <button type="button" data-command="justifyLeft">Bal</button>
+                        <button type="button" data-command="justifyCenter">Közép</button>
+                        <button type="button" data-command="justifyRight">Jobb</button>
+                        <label class="color-label">Szín <input type="color" id="textColor" value="#008c8c"></label>
+                        <label class="color-label">Háttér <input type="color" id="bgColor" value="#fff3bf"></label>
+                        <button type="button" id="linkBtn">Link</button>
+                        <button type="button" id="imageBtn">Kép</button>
+                        <input type="file" id="imageInput" accept="image/*" hidden>
+                    </div>
+
+                    <div id="contentEditor" class="rich-editor" contenteditable="true" data-placeholder="Írd ide a gondolataidat..."></div>
+
+                    <div class="editor-status">
+                        <span>Szavak száma: <b id="wordCount">0</b></span>
+                    </div>
+                </div>
+
+                <p id="message" class="message"></p>
+            </form>
+        </section>
+    </main>    <script src="js/ui.js"></script>
+
+
+    <script src="js/entry.js"></script>
+</body>
+</html>
