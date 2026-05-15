@@ -2829,11 +2829,9 @@ a[href*="logout"] {
         border: none !important;
     }
 
-    .nav-menu .profile-link,
-    .nav-menu .small-avatar,
-    .small-avatar {
-        display: none !important;
-    }
+  .nav-menu .small-avatar {
+    display: none !important;
+}
 
     .landing-hero {
         display: grid !important;
@@ -3035,4 +3033,24 @@ a[href*="logout"] {
     body.logged-in #dashboardNav {
         display: flex !important;
     }
+}
+
+body.logged-in #loginNav,
+body.logged-in #registerNav {
+    display: none !important;
+}
+
+body.logged-in #dashboardNav,
+body.logged-in #profileNav {
+    display: flex !important;
+}
+
+body.logged-in #profileNav {
+    background: white !important;
+    color: #102033 !important;
+    border: 1px solid #e4edf2 !important;
+}
+
+body.logged-in #homeUserName {
+    display: inline !important;
 }
